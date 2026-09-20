@@ -15,29 +15,29 @@ if (menuButton && nav) {
 }
 
 
-// --------------------------------------------------
 // PROJECT CASE STUDIES
-// --------------------------------------------------
-
 const studies = {
   banking: {
     tag: 'DATA ANALYTICS · DATA ENGINEERING',
     title: 'Personal Banking Customer Analytics',
 
     copy:
-      'An end-to-end analytics project focused on organizing and analyzing synthetic personal-banking data across customers, accounts, products, and transactions.',
+      'A PostgreSQL and Python analytics project built around a reproducible synthetic banking dataset covering customers, accounts, products, and transactions.',
 
     problem:
-      'Create a structured view of customer behavior and turn raw banking data into business-focused insights.',
+      'Build a structured analytics pipeline for exploring customer activity, product usage, transaction patterns, spending behavior, and engagement.',
 
     build:
-      'Designed relational data models, wrote SQL analysis queries, and built Python/Pandas workflows for cleaning, transformation, aggregation, and feature engineering.',
+      'Designed a relational PostgreSQL schema, generated synthetic banking data with Python, loaded it into PostgreSQL, wrote analytical SQL queries, and used Pandas, SQLAlchemy, and Matplotlib to analyze and visualize the results.',
 
     outcome:
-      'Analyzed customer activity, transaction patterns, product usage, and segments, then translated the results into visual findings and recommendations.',
+      'Produced customer and transaction analysis across product adoption, account balances, purchase categories, monthly activity, and customer engagement segments, with data-quality checks for the generated dataset.',
 
     stack:
-      'Python · SQL · PostgreSQL · Pandas · Data Analysis · Feature Engineering'
+      'Python · PostgreSQL · SQL · Pandas · SQLAlchemy · Matplotlib',
+
+    github:
+      'https://github.com/Digvijay251/personal-banking-analytics'
   },
 
   churn: {
@@ -85,10 +85,7 @@ const studies = {
 };
 
 
-// --------------------------------------------------
 // CASE STUDY DIALOG
-// --------------------------------------------------
-
 const dialog = document.querySelector('#case-study');
 const content = document.querySelector('#case-content');
 const closeButton = document.querySelector('.close');
@@ -169,11 +166,7 @@ if (closeButton && dialog) {
   });
 }
 
-
-// --------------------------------------------------
 // PROJECT FILTERS
-// --------------------------------------------------
-
 const filterButtons = document.querySelectorAll('[data-filter]');
 const projectCards = document.querySelectorAll('.project-card');
 
@@ -202,10 +195,8 @@ filterButtons.forEach((button) => {
 });
 
 
-// --------------------------------------------------
-// SCROLL REVEAL ANIMATION
-// --------------------------------------------------
 
+// SCROLL REVEAL ANIMATION
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

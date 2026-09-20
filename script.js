@@ -45,19 +45,22 @@ const studies = {
     title: 'Customer Churn & Retention Analytics',
 
     copy:
-      'A customer analytics workflow built to explore the factors associated with churn and retention using structured data, statistics, and machine learning.',
+      'A Python analytics project that explores customer churn using a reproducible synthetic dataset and a simple Logistic Regression model.',
 
     problem:
-      'Identify meaningful customer behavior patterns that can help explain churn and support retention decisions.',
+      'Explore how customer characteristics such as contract type, tenure, support calls, monthly charges, and payment behavior are associated with churn.',
 
     build:
-      'Performed exploratory analysis, statistical analysis, data preparation, feature engineering, and model-oriented workflow development.',
+      'Generated a synthetic dataset of 1,000 customers, analyzed churn patterns with Pandas, created visualizations with Matplotlib, and trained a Logistic Regression model using an 80/20 train-test split.',
 
     outcome:
-      'Produced visualizations and quantitative findings that connect technical analysis to concise retention-focused recommendations.',
+      'Compared churn across customer groups and evaluated the model using accuracy, precision, recall, F1 score, a confusion matrix, and Logistic Regression coefficients.',
 
     stack:
-      'Python · SQL · Statistics · Machine Learning · Data Visualization'
+      'Python · Pandas · Matplotlib · scikit-learn · Logistic Regression',
+
+    github:
+      'https://github.com/Digvijay251/customer-churn-analytics'
   },
 
   studenthub: {
